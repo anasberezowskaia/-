@@ -11,16 +11,20 @@ jobs:
     runs-on: ubuntu-lateat
     steps:
       - uses: actions/checkout@v3
+      
       - name: npm install, test and build
         run: |
           npm install
           npm run build
+          
       - name: Rum a one-linke script
         run: echo Hello, world!
-      - name: Rum a multi-line script
+        
+      - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Rum JS file for test
+          
+      - name: Run JS file for test
         run: node практика/js/script.js    
       
