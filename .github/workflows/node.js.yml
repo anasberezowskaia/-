@@ -1,0 +1,30 @@
+name: CI
+
+ on:
+puch:
+ branches: ["main"]
+pull_request:
+ branches: ["main"]
+ 
+ jobs:
+  my_build_job:
+   runs-on: ubuntu-lateat
+   steps:
+    - uses: actions/checkout@v3
+    
+    - name: npm install, test and build
+      rum: |
+        npm install
+        npm rum build
+        
+    - name: Rum a one-linke script
+      rum: echo Hello, world!
+      
+    - name: Rum a multi-linke script
+      rum: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+        
+    - name: Rum JS file for test
+      rum: node практика/js/script.js    
+      
