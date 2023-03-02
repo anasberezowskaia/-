@@ -22,5 +22,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Rum JS file for test
-        rum: node практика/js/script.js    
+        rum: node .практика/js/script.js    
       
