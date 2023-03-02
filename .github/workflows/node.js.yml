@@ -17,7 +17,7 @@ npm install
 npm run build
 - name: Rum a one-linke script
 rum: echo Hello, world!
-- name: Rum a multi-linke script
+- name: Rum a multi-line script
 rum: |
 echo Add other actions to build,
 echo test, and deploy your project.
