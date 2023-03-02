@@ -1,0 +1,4 @@
+{
+  "main": "/практика/js/script.js",
+  "scripts" : {"build": "node ./практика/js/script.js}
+}
