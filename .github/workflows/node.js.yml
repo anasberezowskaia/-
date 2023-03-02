@@ -1,10 +1,10 @@
 name: CI
-
  on:
-puch:
- branches: ["main"]
-pull_request:
- branches: ["main"]
+ 
+ puch:
+  branches: ["main"]
+ pull_request:
+  branches: ["main"]
  
  jobs:
   my_build_job:
@@ -15,7 +15,6 @@ pull_request:
     - name: npm install, test and build
       rum: |
         npm install
-        npm rum build
         
     - name: Rum a one-linke script
       rum: echo Hello, world!
