@@ -1,12 +1,12 @@
 name: CI
- on:
- 
- puch:
+
+on:
+puch:
   branches: ["main"]
- pull_request:
+pull_request:
   branches: ["main"]
  
- jobs:
+jobs:
   my_build_job:
    runs-on: ubuntu-lateat
    steps:
@@ -15,6 +15,7 @@ name: CI
     - name: npm install, test and build
       rum: |
         npm install
+        npm run build
         
     - name: Rum a one-linke script
       rum: echo Hello, world!
